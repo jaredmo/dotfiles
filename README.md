@@ -3,8 +3,8 @@
 Personal dotfiles on Arch.
 
 ## Neovim
-[ripgrep](https://github.com/BurntSushi/ripgrep) required for [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
-`wl-clipboard` required for system clipboard usage on Wayland.
+- [ripgrep](https://github.com/BurntSushi/ripgrep) required for [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
+- `wl-clipboard` required for system clipboard usage on Wayland.
 
 ### Notable Keybinds
 `SPC n` - toggle nvimtree  
