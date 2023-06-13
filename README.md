@@ -21,3 +21,9 @@ Personal dotfiles on Arch.
 `C-[h, j, k l]` - navigate in insert mode  
 `SPC s` - find and replace on current word  
 
+## macOS
+- Install [iTerm2](https://iterm2.com/)
+- Fix Meta key    
+    - Preferences > Keys > Left Option key: Esc+
+- Install [gruvbox.itermcolors](https://github.com/herrbischoff/iterm2-gruvbox)
+    - Profiles > Colors > Color presets
