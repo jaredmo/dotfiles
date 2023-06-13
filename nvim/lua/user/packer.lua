@@ -21,6 +21,12 @@ return require('packer').startup(function(use)
   use('saadparwaiz1/cmp_luasnip')
   use('rafamadriz/friendly-snippets')
   use {
+      'nvim-tree/nvim-tree.lua',
+      requires = {
+          'nvim-tree/nvim-web-devicons', -- optional
+      },
+  }
+  use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
       requires = {

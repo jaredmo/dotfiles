@@ -2,7 +2,7 @@
 
 Personal dotfiles on Arch.
 
-## Nvim
+## Neovim
 [ripgrep](https://github.com/BurntSushi/ripgrep) required for [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
 `wl-clipboard` required for system clipboard usage on Wayland.
 
