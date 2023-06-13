@@ -10,9 +10,9 @@ Personal dotfiles on Arch.
 `SPC n` - toggle nvimtree  
 `SPC e` - focus nvimtree  
 `SPC u` - open undotree  
-`SPC ff` - find files  
+`SPC pf` - find files  
 `C-p` - fuzzy search git files  
-`SPC fs` - grep within files  
+`SPC ps` - grep within files  
 `SPC gs` - open git  
 
 `SPC p` - paste without copy  
