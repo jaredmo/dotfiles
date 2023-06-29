@@ -1,3 +1,4 @@
+require("user.packer")
 require("user.remap")
 require("user.set")
 vim.o.background = "dark" -- or "light" for light mode
