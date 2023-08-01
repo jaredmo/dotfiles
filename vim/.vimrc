@@ -11,3 +11,6 @@ set tabstop=4 shiftwidth=4 expandtab
 
 :set colorcolumn=80
 :highlight ColorColumn ctermbg=darkgrey
+
+let mapleader=" "
+nnoremap <leader>v :vnew<CR>
