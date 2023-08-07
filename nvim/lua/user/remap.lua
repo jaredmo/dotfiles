@@ -32,4 +32,6 @@ vim.keymap.set("n", "<leader>Y", [["+Y]])
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 --Navigate buffers
---vim.keymap.set("n", "<leader>b", ":ls<CR>:b<Space>")
+vim.keymap.set("n", "<leader>bn", ":bnext<CR>")
+vim.keymap.set("n", "<leader>bp", ":bprevious<CR>")
+vim.keymap.set("n", "<leader>bd", ":bdelete<CR>")

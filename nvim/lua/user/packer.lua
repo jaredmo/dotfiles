@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
   use('tpope/vim-fugitive')
   use('ellisonleao/gruvbox.nvim')
   use('saadparwaiz1/cmp_luasnip')
+  use('ThePrimeagen/harpoon')
   use('rafamadriz/friendly-snippets')
   use {
       'nvim-tree/nvim-tree.lua',
