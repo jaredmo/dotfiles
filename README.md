@@ -7,26 +7,33 @@ Personal dotfiles.
 - `wl-clipboard` required for system clipboard usage on Wayland.
 
 ### Notable Keybinds
-Navigation  
-`SPC n` - toggle nvimtree  
-`SPC e` - focus nvimtree  
-`SPC pf` - find files  
-`SPC pb` - navigate buffers  
-`SPC ps` - grep within files  
-`C-p` - fuzzy search git files  
-`SPC bn` - next buffer  
-`SPC bp` - previous buffer  
-`SPC bd` - delete buffer  
+vim reminders
+`C-^` - previous file
 
-Editting  
-`SPC u` - open undotree  
+remaps  
 `SPC p` - paste without copy  
 `SPC y` - yank to system clipboard  
 `C-[J, K]` - move lines in visual mode  
 `C-[h, j, k l]` - navigate in insert mode  
 `SPC s` - find and replace on current word  
+`SPC bn` - next buffer  
+`SPC bp` - previous buffer  
+`SPC bd` - delete buffer  
 
-LSP  
+undotree
+`SPC u` - open undotree  
+
+nvimtree
+`SPC n` - toggle nvimtree  
+`SPC e` - focus nvimtree  
+
+telescope
+`SPC pf` - find files  
+`SPC pb` - navigate buffers  
+`C-p` - fuzzy search git files  
+`SPC ps` - grep within files  
+
+lsp-zero  
 `K` - hover  
 `gd` - goto definition  
 `gr` - list references  
@@ -37,7 +44,7 @@ LSP
 `[d` - prev diagnostic  
 `]d` - next diagnostic  
 
-Harpoon  
+harpoon  
 `SPC a` - harpoon file  
 `C-e` - open harpoon  
 `C-h` - file 1  
@@ -45,7 +52,7 @@ Harpoon
 `C-n` - file 3  
 `C-s` - file 4  
 
-Fugitive  
+fugitive  
 `SPC gs` - open git  
 
 ## macOS
