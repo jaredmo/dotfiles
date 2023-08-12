@@ -59,7 +59,7 @@ fugitive
 `-` - stage/unstage toggle  
 `U` - unstage all  
 `=` - toggle inline diff  
-`I` - stage interactively 
+`I` - stage interactively  
 `czz` - push stash  
 `cc` - create commit
 
