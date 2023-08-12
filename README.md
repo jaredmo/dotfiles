@@ -7,7 +7,7 @@ Personal dotfiles.
 - `wl-clipboard` required for system clipboard usage on Wayland.
 
 ### Notable Keybinds
-vim reminders  
+vim  
 `C-^` - previous file
 
 remaps  
@@ -41,7 +41,7 @@ lsp-zero
 `<F3>` - code format  
 `<F4>` - code action  
 `gl` - display diagnostics  
-`[d` - prev diagnostic  
+`[d` - prev dia`gnostic  
 `]d` - next diagnostic  
 
 harpoon  
@@ -54,6 +54,13 @@ harpoon
 
 fugitive  
 `SPC gs` - open git  
+
+## tmux
+
+### Notable Keybinds
+`M-[h, j, k, l]` - switch panes  
+`M-[H, J, K, L]` - resize panes  
+`M-[Pageup, Pagedown]` - switch windows  
 
 ## macOS
 - Install [iTerm2](https://iterm2.com/)
