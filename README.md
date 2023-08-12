@@ -54,12 +54,14 @@ harpoon
 
 fugitive  
 `SPC gs` - open git  
-`s` - stage file under cursor
-`u` - unstage file under cursor
-`-` - stage/unstage toggle
-`U` - unstage all
-`=` - toggle inline diff
-`I` - stage interactively
+`s` - stage file under cursor  
+`u` - unstage file under cursor  
+`-` - stage/unstage toggle  
+`U` - unstage all  
+`=` - toggle inline diff  
+`I` - stage interactively 
+`czz` - push stash  
+`cc` - create commit
 
 ## tmux
 
