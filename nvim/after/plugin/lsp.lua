@@ -18,19 +18,19 @@ local cmp_action = require('lsp-zero').cmp_action()
 require('luasnip.loaders.from_vscode').lazy_load()
 
 cmp.setup({
-  sources = {
-    {name = 'nvim_lsp'},
-    {name = 'luasnip'},
-  },
-  mapping = {
-      ['<C-f>'] = cmp_action.luasnip_jump_forward(),
-      ['<C-b>'] = cmp_action.luasnip_jump_backward(),
-      ['<Tab>'] = cmp.mapping.confirm({ select = true })
-  }
+    sources = {
+        { name = 'nvim_lsp' },
+        { name = 'luasnip' },
+    },
+    mapping = {
+        ['<C-f>'] = cmp_action.luasnip_jump_forward(),
+        ['<C-b>'] = cmp_action.luasnip_jump_backward(),
+        ['<Tab>'] = cmp.mapping.confirm({ select = true })
+    }
 })
 
 lsp.on_attach(function(client, bufnr)
-  lsp.default_keymaps({buffer = bufnr})
+    lsp.default_keymaps({ buffer = bufnr })
 end)
 
 -- (Optional) Configure lua language server for neovim
