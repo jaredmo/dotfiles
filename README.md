@@ -7,7 +7,7 @@ Personal dotfiles.
 - `wl-clipboard` required for system clipboard usage on Wayland.
 
 ### Notable Keybinds
-vim reminders
+vim reminders  
 `C-^` - previous file
 
 remaps  
@@ -20,14 +20,14 @@ remaps
 `SPC bp` - previous buffer  
 `SPC bd` - delete buffer  
 
-undotree
+undotree  
 `SPC u` - open undotree  
 
-nvimtree
+nvimtree  
 `SPC n` - toggle nvimtree  
 `SPC e` - focus nvimtree  
 
-telescope
+telescope  
 `SPC pf` - find files  
 `SPC pb` - navigate buffers  
 `C-p` - fuzzy search git files  
