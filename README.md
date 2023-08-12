@@ -41,7 +41,7 @@ lsp-zero
 `<F3>` - code format  
 `<F4>` - code action  
 `gl` - display diagnostics  
-`[d` - prev dia`gnostic  
+`[d` - prev diagnostic  
 `]d` - next diagnostic  
 
 harpoon  
