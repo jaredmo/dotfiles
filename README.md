@@ -18,7 +18,7 @@ Navigation
 `SPC bp` - previous buffer  
 `SPC bd` - delete buffer  
 
-Editting  
+Editing  
 `SPC u` - open undotree  
 `SPC p` - paste without copy  
 `SPC y` - yank to system clipboard  
