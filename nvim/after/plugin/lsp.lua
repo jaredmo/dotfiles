@@ -2,14 +2,29 @@ local lsp = require('lsp-zero').preset({})
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({
-    'tsserver',
+require("mason-lspconfig").setup {
+    ensure_installed = {
+--    'tsserver',
     'lua_ls',
-    'eslint',
     'pyright',
-    'rust_analyzer',
-})
+--    'black',
+--    'flake8',
+    'bashls',
+    'marksman',
+    'docker_compose_language_service',
+    'eslint',
+    'rust_analyzer'
+}}
 
+lsp.on_attach(function(client, bufnr)
+    lsp.default_keymaps({ buffer = bufnr })
+end)
+
+-- (Optional) Configure lua language server for neovim
+require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
+-- luasnip
+-- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/autocomplete.md#add-an-external-collection-of-snippets
 -- Make sure you setup `cmp` after lsp-zero
 
 local cmp = require('cmp')
@@ -28,12 +43,5 @@ cmp.setup({
         ['<Tab>'] = cmp.mapping.confirm({ select = true })
     }
 })
-
-lsp.on_attach(function(client, bufnr)
-    lsp.default_keymaps({ buffer = bufnr })
-end)
-
--- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.setup()
