@@ -5,6 +5,7 @@ lsp.preset("recommended")
 require("mason-lspconfig").setup {
     ensure_installed = {
 --    'tsserver',
+    'clangd',
     'lua_ls',
     'pyright',
 --    'black',
