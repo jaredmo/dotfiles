@@ -23,6 +23,14 @@ undotree
 nvimtree  
 `SPC n` - toggle nvimtree  
 `SPC e` - focus nvimtree  
+`C-]` - cd  
+`-` - up  
+`c` - create  
+`d` - delete  
+`E` - expand all  
+`W` - collapse all  
+`H` - toggle filter dotfiles  
+`I` - toggle filter gitignore  
 
 telescope  
 `SPC pf` - find files  
