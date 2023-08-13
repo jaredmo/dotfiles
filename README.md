@@ -16,9 +16,6 @@ remaps
 `C-[J, K]` - move lines in visual mode  
 `C-[h, j, k l]` - navigate in insert mode  
 `SPC s` - find and replace on current word  
-`SPC bn` - next buffer  
-`SPC bp` - previous buffer  
-`SPC bd` - delete buffer  
 
 undotree  
 `SPC u` - open undotree  
