@@ -9,7 +9,7 @@ require("mason-lspconfig").setup {
     'lua_ls',
     'pyright',
 --    'black',
---    'flake8',
+    'ruff_lsp',
     'bashls',
     'marksman',
     'docker_compose_language_service',
