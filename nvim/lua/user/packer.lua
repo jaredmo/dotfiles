@@ -13,7 +13,21 @@ return require('packer').startup(function(use)
 	  requires = { {'nvim-lua/plenary.nvim'} }
   }
 
-  use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+  use {
+        'nvim-telescope/telescope-file-browser.nvim',
+        requires = {
+            {'nvim-telescope/telescope.nvim'},
+            {'nvim-lua/plenary.nvim'}
+    }
+  }
+
+  use('nvim-tree/nvim-web-devicons')
+
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate'
+  }
+
   use('nvim-treesitter/nvim-treesitter-context')
   use('nvim-treesitter/playground')
   use('mbbill/undotree')
@@ -22,12 +36,6 @@ return require('packer').startup(function(use)
   use('saadparwaiz1/cmp_luasnip')
   use('ThePrimeagen/harpoon')
   use('rafamadriz/friendly-snippets')
-  use {
-      'nvim-tree/nvim-tree.lua',
-      requires = {
-          'nvim-tree/nvim-web-devicons', -- optional
-      },
-  }
   use {
       'VonHeikemen/lsp-zero.nvim',
       branch = 'v2.x',
