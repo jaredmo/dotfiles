@@ -12,6 +12,10 @@
             "url": "https://wpln.streamguys1.com/wfclfm.aac"
         },
         {
+            "station": "90.3 WPLN HD3 International",
+            "url": "https://wpln.streamguys1.com/wplnam.aac"
+        },
+        {
             "station": "91.1 WNXP",
             "url": "https://wpln.streamguys1.com/wnxpfm.aac"
         },
@@ -30,6 +34,10 @@
         {
             "station": "90.3 KEXP",
             "url": "https://kexp.streamguys1.com/kexp160.aac"
+        },
+        {
+            "station": "89.9 KCRW Eclectic24",
+            "url": "https://kcrw.streamguys1.com/kcrw_192k_mp3_e24"
         }
 	]
 }
