@@ -4,3 +4,5 @@ ln -sf $HOME/Projects/dotfiles/systemd/unmountnas.service /etc/systemd/system/
 ln -sf $HOME/Projects/dotfiles/tmux/wayland/.tmux.conf $HOME/
 ln -sf $HOME/Projects/dotfiles/vim/.vimrc $HOME/
 ln -sf $HOME/Projects/dotfiles/zsh/debian/.zshrc $HOME/
+ln -sf $HOME/Projects/dotfiles/radio-cli $HOME/.config
+

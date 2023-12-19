@@ -1,0 +1,35 @@
+{
+	"config_version": "2.1.1",
+	"max_lines": 10,
+	"country": "US",
+	"data": [
+        {
+            "station": "90.3 WPLN Nashville Public Radio",
+            "url": "https://wpln.streamguys1.com/wplnfm.aac"
+        },
+        {
+            "station": "90.3 WPLN HD2 Nashville Classical Radio",
+            "url": "https://wpln.streamguys1.com/wfclfm.aac"
+        },
+        {
+            "station": "91.1 WNXP",
+            "url": "https://wpln.streamguys1.com/wnxpfm.aac"
+        },
+        {
+            "station": "100.1 WRLT Lightning 100",
+            "url": "https://18683.live.streamtheworld.com/WRLTFMAAC.aac"
+        },
+        {
+            "station": "101.5 WXNA",
+            "url": "http://listen.wxnafm.org:8000/stream.m3u"
+        },
+        {
+            "station": "650 WSM AM",
+            "url": "https://stream01048.westreamradio.com/wsm-am-mp3"
+        },
+        {
+            "station": "90.3 KEXP",
+            "url": "https://kexp.streamguys1.com/kexp160.aac"
+        }
+	]
+}
