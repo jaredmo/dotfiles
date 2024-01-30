@@ -108,14 +108,21 @@ source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
 # Aliases
+alias l="ls -lah --color"
+alias lh="ls -lh --color"
 alias mountnas="bash $HOME/Scripts/mountnas.sh"
 alias unmountnas="bash $HOME/Scripts/unmountnas.sh"
-alias unmountnaslazy="bash $HOME/Scripts/unmountnaslazy.sh"
+alias unmountnas-lazy="bash $HOME/Scripts/unmountnaslazy.sh"
 alias mountssh="bash $HOME/Scripts/mountssh.sh"
 alias unmountssh="bash $HOME/Scripts/unmountssh.sh"
-alias reload="source $HOME/.zshrc"
+alias configbackup="bash $HOME/Scripts/configbackup.sh"
+alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias :q="exit"
+alias reload="source $HOME/.zshrc"
+
+alias startup="bash $HOME/Scripts/startup.sh"
+alias dockerup="bash $HOME/Scripts/dockerup.sh" 
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh

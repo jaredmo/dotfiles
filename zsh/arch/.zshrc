@@ -54,13 +54,14 @@ alias unmountnas="bash $HOME/Scripts/unmountnas.sh"
 alias unmountnas-lazy="bash $HOME/Scripts/unmountnaslazy.sh"
 alias mountssh="bash $HOME/Scripts/mountssh.sh"
 alias unmountssh="bash $HOME/Scripts/unmountssh.sh"
-alias hugopost="bash $HOME/Scripts/hugopost.sh"
 alias configbackup="bash $HOME/Scripts/configbackup.sh"
-alias updatemirrors="sudo reflector --verbose --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias update="yay && flatpak update -y && pacdiff -o"
 alias :q="exit"
-alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias reload="source $HOME/.zshrc"
+
+alias hugopost="bash $HOME/Scripts/hugopost.sh"
+alias updatemirrors="sudo reflector --verbose --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
