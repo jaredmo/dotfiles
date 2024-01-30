@@ -35,7 +35,6 @@ nvimtree
 telescope  
 `SPC pf` - find files  
 `SPC pb` - navigate buffers  
-`C-p` - fuzzy search git files  
 `SPC ps` - grep within files  
 
 lsp-zero  
@@ -74,6 +73,9 @@ fugitive
 `M-[h, j, k, l]` - switch panes  
 `M-[H, J, K, L]` - resize panes  
 `M-[Pageup, Pagedown]` - switch windows  
+
+## radio-cli
+My stations for [radio-cli](https://github.com/margual56/radio-cli)
 
 ## macOS
 - Install [iTerm2](https://iterm2.com/)
