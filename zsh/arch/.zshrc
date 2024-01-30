@@ -48,20 +48,21 @@ bindkey '^[[1;5D' backward-word
 
 # Aliases
 alias l='ls -lah --color'
-alias lh='ls -lh --color'
+alias ll='ls -lh --color'
 alias mountnas="bash $HOME/Scripts/mountnas.sh"
 alias unmountnas="bash $HOME/Scripts/unmountnas.sh"
 alias unmountnas-lazy="bash $HOME/Scripts/unmountnaslazy.sh"
 alias mountssh="bash $HOME/Scripts/mountssh.sh"
 alias unmountssh="bash $HOME/Scripts/unmountssh.sh"
 alias configbackup="bash $HOME/Scripts/configbackup.sh"
-alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
-alias update="yay && flatpak update -y && pacdiff -o"
 alias :q="exit"
-alias reload="source $HOME/.zshrc"
+alias sozsh="source $HOME/.zshrc"
 
+# Arch aliases
+alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias hugopost="bash $HOME/Scripts/hugopost.sh"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias update="yay && flatpak update -y && pacdiff -o"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
