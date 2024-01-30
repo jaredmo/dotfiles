@@ -1,4 +1,4 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
+# Enable Powerlevel10k instant prompt. Should stay close to the top of $HOME/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
@@ -107,18 +107,15 @@ fi
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-alias mountnas="bash ~/Scripts/mountnas.sh"
-alias unmountnas="bash ~/Scripts/unmountnas.sh"
-alias unmountnaslazy="bash ~/Scripts/unmountnaslazy.sh"
-alias mountssh="bash ~/Scripts/mountssh.sh"
-alias unmountssh="bash ~/Scripts/unmountssh.sh"
-alias vim="nvim"
-alias reload="source ~/.zshrc"
+# Aliases
+alias mountnas="bash $HOME/Scripts/mountnas.sh"
+alias unmountnas="bash $HOME/Scripts/unmountnas.sh"
+alias unmountnaslazy="bash $HOME/Scripts/unmountnaslazy.sh"
+alias mountssh="bash $HOME/Scripts/mountssh.sh"
+alias unmountssh="bash $HOME/Scripts/unmountssh.sh"
+alias reload="source $HOME/.zshrc"
 alias update="sudo apt update && sudo apt upgrade -y"
 alias :q="exit"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
+[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
