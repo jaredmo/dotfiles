@@ -70,6 +70,7 @@ alias gl="git pull"
 alias glg='git log --stat'
 alias glgp="git log --stat --patch"
 alias glog="git log --oneline --decorate --graph"
+alias gm="git merge"
 alias gp="git push"
 alias gpf!="git push --force"
 alias gpristine="git reset --hard && git clean -dffx"
