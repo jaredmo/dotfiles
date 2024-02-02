@@ -4,23 +4,51 @@ Personal dotfiles.
 
 ## Neovim
 - [ripgrep](https://github.com/BurntSushi/ripgrep) required for [nvim-telescope](https://github.com/nvim-telescope/telescope.nvim)
-- `wl-clipboard` required for system clipboard usage on Wayland.
+- `wl-clipboard` required for system clipboard usage on [Wayland](https://en.wikipedia.org/wiki/Wayland_(protocol)).
 
 ### Notable Keybinds
-vim  
-`C-^` - previous file
 
-remaps  
+#### Shortcuts  
+`C-^` - previous file  
 `SPC p` - paste without copy  
 `SPC y` - yank to system clipboard  
 `C-[J, K]` - move lines in visual mode  
 `C-[h, j, k l]` - navigate in insert mode  
 `SPC s` - find and replace on current word  
 
-undotree  
-`SPC u` - open undotree  
+#### [comment.nvim](https://github.com/numToStr/Comment.nvim)  
+- Visual mode  
+`gc` - Toggles the region using linewise comment  
+`gb` - Toggles the region using blockwise comment  
 
-nvimtree  
+- Normal mode
+`gcc` - Toggles the current line using linewise comment  
+`gbc` - Toggles the current line using blockwise comment  
+`[count]gcc` - Toggles the number of line given as a prefix-count using linewise  
+`[count]gbc` - Toggles the number of line given as a prefix-count using blockwise  
+`gc[count]{motion}` - (Op-pending) Toggles the region using linewise comment  
+`gb[count]{motion}` - (Op-pending) Toggles the region using blockwise comment  
+
+#### [harpoon](https://github.com/ThePrimeagen/harpoon)  
+`SPC a` - harpoon file  
+`C-e` - open harpoon  
+`C-h` - file 1  
+`C-t` - file 2  
+`C-n` - file 3  
+`C-s` - file 4  
+
+#### [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)  
+`K` - hover  
+`gd` - goto definition  
+`gr` - list references  
+`<F2>` - rename  
+`<F3>` - code format  
+`<F4>` - code action  
+`gl` - display diagnostics  
+`[d` - prev diagnostic  
+`]d` - next diagnostic  
+
+#### [nvimtree.lua](https://github.com/nvim-tree/nvim-tree.lua)  
 `SPC n` - toggle nvimtree  
 `SPC e` - focus nvimtree  
 `C-]` - cd  
@@ -32,31 +60,15 @@ nvimtree
 `H` - toggle filter dotfiles  
 `I` - toggle filter gitignore  
 
-telescope  
+#### [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)  
 `SPC pf` - find files  
 `SPC pb` - navigate buffers  
 `SPC ps` - grep within files  
 
-lsp-zero  
-`K` - hover  
-`gd` - goto definition  
-`gr` - list references  
-`<F2>` - rename  
-`<F3>` - code format  
-`<F4>` - code action  
-`gl` - display diagnostics  
-`[d` - prev diagnostic  
-`]d` - next diagnostic  
+#### [undotree](https://github.com/mbbill/undotree)  
+`SPC u` - open undotree  
 
-harpoon  
-`SPC a` - harpoon file  
-`C-e` - open harpoon  
-`C-h` - file 1  
-`C-t` - file 2  
-`C-n` - file 3  
-`C-s` - file 4  
-
-fugitive  
+#### [vim-fugitive](https://github.com/tpope/vim-fugitive)  
 `SPC gs` - open git  
 `s` - stage file under cursor  
 `u` - unstage file under cursor  
