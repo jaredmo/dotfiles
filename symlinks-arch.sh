@@ -1,5 +1,5 @@
-ln -sf $HOME/Projects/dotfiles/alacritty $HOME/.config
-ln -sf $HOME/Projects/dotfiles/konsole/GruvboxDark.colorscheme /usr/share/konsole
+ln -sf $HOME/Projects/dotfiles/alacritty/arch/alacritty.toml $HOME/.config/alacritty/
+ln -sf $HOME/Projects/dotfiles/konsole/GruvboxDark.colorscheme /usr/share/konsole/
 ln -sf $HOME/Projects/dotfiles/nvim $HOME/.config
 ln -sf $HOME/Projects/dotfiles/radio-cli $HOME/.config
 ln -sf $HOME/Projects/dotfiles/systemd/unmountnas.service /etc/systemd/system/
