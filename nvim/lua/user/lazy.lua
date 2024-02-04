@@ -25,7 +25,10 @@ require("lazy").setup({
     { 'nvim-treesitter/playground' },
     { 'mbbill/undotree' },
     { 'tpope/vim-fugitive' },
-    { 'ellisonleao/gruvbox.nvim' },
+    {
+        'ellisonleao/gruvbox.nvim',
+        opts = { transparent_mode = true }
+    },
     { 'saadparwaiz1/cmp_luasnip' },
     { 'ThePrimeagen/harpoon' },
     { 'rafamadriz/friendly-snippets' },
