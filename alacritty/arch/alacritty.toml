@@ -1,5 +1,6 @@
 [window]
 startup_mode = "maximized"
+opacity = 0.8
 
 [window.padding]
 x = 5
