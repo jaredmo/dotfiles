@@ -48,6 +48,11 @@ Personal dotfiles.
 `[d` - prev diagnostic  
 `]d` - next diagnostic  
 
+#### [L3MON4D3/LuaSnip](https://github.com/L3MON4D3/LuaSnip)
+`C-f` - jump forward in snippet  
+`C-b` - jump backward in snippet  
+`Tab` - confirm selection  
+
 #### [nvimtree.lua](https://github.com/nvim-tree/nvim-tree.lua)  
 `SPC n` - toggle nvimtree  
 `SPC e` - focus nvimtree  
