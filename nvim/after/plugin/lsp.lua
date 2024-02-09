@@ -8,7 +8,6 @@ require("mason-lspconfig").setup {
     ensure_installed = {
         'bashls',
         'clangd',
-        'docker_compose_language_service',
         'eslint',
         'lua_ls',
         'marksman',
@@ -32,7 +31,7 @@ require("mason-lspconfig").setup_handlers {
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
-    lsp.buffer_autoformat()    -- Format on save
+    lsp.buffer_autoformat() -- Format on save
 end)
 
 -- luasnip
