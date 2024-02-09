@@ -23,11 +23,12 @@ require("mason-lspconfig").setup {
 require("mason-lspconfig").setup_handlers {
     function(server_name)
         require("lspconfig")[server_name].setup {}
+    end,
+    -- (Optional) Configure lua language server for neovim
+    ["lua_ls"] = function()
+        require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
     end
 }
-
--- (Optional) Configure lua language server for neovim
--- require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
@@ -47,6 +48,8 @@ cmp.setup({
     sources = {
         { name = 'nvim_lsp' },
         { name = 'luasnip' },
+        { name = 'buffer' },
+        { name = 'path' },
     },
     mapping = {
         ['<C-f>'] = cmp_action.luasnip_jump_forward(),
