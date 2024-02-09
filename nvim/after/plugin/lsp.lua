@@ -19,12 +19,20 @@ require("mason-lspconfig").setup {
     'rust_analyzer'
 }}
 
+-- (Optional) Automatic lsp server setup
+-- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#automatic-server-setup-advanced-feature
+require("mason-lspconfig").setup_handlers {
+    function (server_name)
+        require("lspconfig")[server_name].setup {}
+    end
+}
+
+-- (Optional) Configure lua language server for neovim
+-- require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
+
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
 end)
-
--- (Optional) Configure lua language server for neovim
-require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
 -- luasnip
 -- https://github.com/VonHeikemen/lsp-zero.nvim/blob/v2.x/doc/md/autocomplete.md#add-an-external-collection-of-snippets
@@ -44,7 +52,7 @@ cmp.setup({
         ['<C-f>'] = cmp_action.luasnip_jump_forward(),
         ['<C-b>'] = cmp_action.luasnip_jump_backward(),
         ['<Tab>'] = cmp.mapping.confirm({ select = true })
-    }
+    },
 })
 
 lsp.setup()
