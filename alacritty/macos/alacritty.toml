@@ -1,6 +1,6 @@
 [window]
 startup_mode = "maximized"
-opacity = 0.8
+opacity = 0.9
 option_as_alt = "OnlyLeft"
 
 [window.padding]

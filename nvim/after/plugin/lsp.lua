@@ -6,23 +6,23 @@ require("mason").setup()
 
 require("mason-lspconfig").setup {
     ensure_installed = {
---    'tsserver',
-    'clangd',
-    'lua_ls',
-    'pyright',
---    'black',
-    'ruff_lsp',
-    'bashls',
-    'marksman',
-    'docker_compose_language_service',
-    'eslint',
-    'rust_analyzer'
-}}
+        'bashls',
+        'clangd',
+        'docker_compose_language_service',
+        'eslint',
+        'lua_ls',
+        'marksman',
+        'pyright',
+        'ruff_lsp',
+        'rust_analyzer',
+        'tsserver',
+        'yamlls',
+    } }
 
 -- (Optional) Automatic lsp server setup
 -- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#automatic-server-setup-advanced-feature
 require("mason-lspconfig").setup_handlers {
-    function (server_name)
+    function(server_name)
         require("lspconfig")[server_name].setup {}
     end
 }
@@ -32,6 +32,7 @@ require("mason-lspconfig").setup_handlers {
 
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
+    lsp.buffer_autoformat()    -- Format on save
 end)
 
 -- luasnip
