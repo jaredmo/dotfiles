@@ -38,3 +38,6 @@ vim.keymap.set("n", "<leader>bd", [[:bd<CR>]], { desc = "Delete buffer" })
 vim.keymap.set("n", "<leader>bm", [[:bmodified<CR>]], { desc = "List modified buffers" })
 vim.keymap.set("n", "<leader>bn", [[:bn<CR>]], { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>bp", [[:bp<CR>]], { desc = "Previous buffer" })
+
+-- Terminal
+vim.keymap.set("n", "<leader>t", [[:terminal<CR>]], { desc = "Open terminal" })
