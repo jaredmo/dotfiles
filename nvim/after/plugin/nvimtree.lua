@@ -18,14 +18,14 @@ require("nvim-tree").setup({
         group_empty = true,
     },
     filters = {
-        dotfiles = false,
+        dotfiles = true,
     },
     actions = {
         open_file = {
-            quit_on_open = true
+            quit_on_open = false
         }
     }
 })
 
-vim.keymap.set('n', "<leader>n", vim.cmd.NvimTreeToggle)
-vim.keymap.set('n', "<leader>e", vim.cmd.NvimTreeFocus)
+vim.keymap.set('n', "<leader>n", vim.cmd.NvimTreeToggle, { desc = "Toggle NvimTree" })
+vim.keymap.set('n', "<leader>e", vim.cmd.NvimTreeFocus, { desc = "Focus NvimTree" })

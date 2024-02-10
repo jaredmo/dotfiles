@@ -25,19 +25,32 @@ require("lazy").setup({
     { 'nvim-treesitter/playground' },
     { 'mbbill/undotree' },
     { 'tpope/vim-fugitive' },
+    { 'tpope/vim-sleuth' },
     {
         'ellisonleao/gruvbox.nvim',
         opts = { transparent_mode = true }
     },
     { 'saadparwaiz1/cmp_luasnip' },
-    { 'ThePrimeagen/harpoon' },
-    { 'rafamadriz/friendly-snippets' },
     {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
     },
+    {
+        'windwp/nvim-autopairs',
+        event = "InsertEnter",
+        opts = {} -- this is equalent to setup({}) function
+    },
+    {
+        'numToStr/Comment.nvim',
+        opts = {},
+        lazy = false
+    },
+    {
+        'folke/which-key.nvim',
+        opts = {}
+    },
 
-    -- lsp-zero
+    -- LSP, completions, & snippets
     {
         'williamboman/mason.nvim',
         cmd = 'MasonUpdate'
@@ -49,15 +62,8 @@ require("lazy").setup({
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-buffer' },
     { 'hrsh7th/cmp-path' },
-    { 'L3MON4D3/LuaSnip' },
     {
-        'windwp/nvim-autopairs',
-        event = "InsertEnter",
-        opts = {} -- this is equalent to setup({}) function
+        'L3MON4D3/LuaSnip',
+        dependencies = { 'rafamadriz/friendly-snippets' },
     },
-    {
-        'numToStr/Comment.nvim',
-        opts = {},
-        lazy = false
-    }
 })
