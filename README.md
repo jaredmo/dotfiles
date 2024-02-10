@@ -29,14 +29,6 @@ Personal dotfiles.
 `gc[count]{motion}` - (Op-pending) Toggles the region using linewise comment  
 `gb[count]{motion}` - (Op-pending) Toggles the region using blockwise comment  
 
-#### [harpoon](https://github.com/ThePrimeagen/harpoon)  
-`SPC a` - harpoon file  
-`C-e` - open harpoon  
-`C-h` - file 1  
-`C-t` - file 2  
-`C-n` - file 3  
-`C-s` - file 4  
-
 #### [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)  
 `K` - hover  
 `gd` - goto definition  
@@ -74,7 +66,7 @@ Personal dotfiles.
 `SPC u` - open undotree  
 
 #### [vim-fugitive](https://github.com/tpope/vim-fugitive)  
-`SPC gs` - open git  
+`SPC gf` - open git  
 `s` - stage file under cursor  
 `u` - unstage file under cursor  
 `-` - stage/unstage toggle  
