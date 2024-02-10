@@ -22,7 +22,6 @@ require("lazy").setup({
         cmd = 'TSUpdate'
     },
     { 'nvim-treesitter/nvim-treesitter-context' },
-    { 'nvim-treesitter/playground' },
     { 'mbbill/undotree' },
     { 'tpope/vim-fugitive' },
     { 'tpope/vim-sleuth' },
@@ -30,7 +29,6 @@ require("lazy").setup({
         'ellisonleao/gruvbox.nvim',
         opts = { transparent_mode = true }
     },
-    { 'saadparwaiz1/cmp_luasnip' },
     {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
@@ -66,6 +64,7 @@ require("lazy").setup({
         'L3MON4D3/LuaSnip',
         dependencies = { 'rafamadriz/friendly-snippets' },
     },
+    { 'saadparwaiz1/cmp_luasnip' },
 
     -- Git signs
     {
