@@ -1,1 +1,1 @@
-vim.keymap.set("n", "<leader>gs", vim.cmd.Git, { desc = "Show Git" });
+vim.keymap.set("n", "<leader>gf", vim.cmd.Git, { desc = "Show Fugitive" });
