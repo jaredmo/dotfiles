@@ -136,8 +136,8 @@ require("lazy").setup({
                 map('n', '<leader>gtb', gs.toggle_current_line_blame, { desc = 'Toggle git blame line' })
                 map('n', '<leader>gtd', gs.toggle_deleted, { desc = 'Toggle git show deleted' })
 
-                -- Text object
-                map({ 'o', 'x' }, 'ih', ':<C-U>Gitsigns select_hunk<CR>', { desc = 'Select hunk' })
+                -- normal or visual
+                map({ 'o', 'x' }, '<leader>gv', gs.select_hunk, { desc = 'Select hunk' })
             end,
         },
     },

@@ -29,6 +29,22 @@ Personal dotfiles.
 `gc[count]{motion}` - (Op-pending) Toggles the region using linewise comment  
 `gb[count]{motion}` - (Op-pending) Toggles the region using blockwise comment  
 
+#### [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+`]c` - next hunk  
+`[c` - previous hunk  
+`SPC gr` - reset hunk  
+`SPC gs` - stage hunk  
+`SPC gS` - stage buffer  
+`SPC gu` - undo stage hunk  
+`SPC gR` - reset buffer  
+`SPC gp` - preview hunk  
+`SPC gb` - blame line  
+`SPC gd` - diff against index  
+`SPC gD` - diff against last commit  
+`SPC gtb` - toggle git blame line  
+`SPC gtd` - toggle git show deleted  
+`SPC gv` - select hunk  
+
 #### [lsp-zero.nvim](https://github.com/VonHeikemen/lsp-zero.nvim)  
 `K` - hover  
 `gd` - goto definition  
