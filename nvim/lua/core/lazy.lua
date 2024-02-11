@@ -29,6 +29,7 @@ require("lazy").setup({
         'ellisonleao/gruvbox.nvim',
         opts = { transparent_mode = true }
     },
+    { 'ThePrimeagen/harpoon' },
     {
         'nvim-tree/nvim-tree.lua',
         dependencies = 'nvim-tree/nvim-web-devicons'
