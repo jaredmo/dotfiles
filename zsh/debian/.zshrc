@@ -107,6 +107,9 @@ fi
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
+# Add $HOME/.local/bin to $PATH
+export PATH="$HOME/.local/bin:$PATH"
+
 # Aliases
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
