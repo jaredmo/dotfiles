@@ -12,7 +12,7 @@ require("mason-lspconfig").setup {
         'lua_ls',
         'marksman',
         'pyright',
-        'ruff_lsp',
+        --'ruff_lsp',
         'rust_analyzer',
         'tsserver',
         'yamlls',
