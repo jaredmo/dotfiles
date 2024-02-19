@@ -14,3 +14,5 @@ set tabstop=4 shiftwidth=4 expandtab
 
 let mapleader=" "
 nnoremap <leader>v :vnew<CR>
+nnoremap <leader>pf :Ex<CR>
+
