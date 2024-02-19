@@ -107,7 +107,7 @@ fi
 source /usr/share/doc/fzf/examples/key-bindings.zsh
 source /usr/share/doc/fzf/examples/completion.zsh
 
-# Add $HOME/.local/bin to $PATH for fd
+# Add $HOME/.local/bin to $PATH
 export PATH="$HOME/.local/bin:$PATH"
 
 # Keybinds
@@ -133,3 +133,4 @@ alias update="sudo apt update && sudo apt upgrade -y"
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
 [[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh
+

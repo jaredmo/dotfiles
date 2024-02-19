@@ -77,7 +77,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -90,9 +90,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='vim'
+  export EDITOR='nvim'
 else
-  export EDITOR='vim'
+  export EDITOR='nvim'
 fi
 
 # Compilation flags
@@ -110,6 +110,9 @@ source /usr/share/doc/fzf/examples/completion.zsh
 # Add $HOME/.local/bin to $PATH
 export PATH="$HOME/.local/bin:$PATH"
 
+# Keybinds
+bindkey '^ ' autosuggest-accept # Ctrl + Space to accept autosuggestion
+
 # Aliases
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
@@ -125,7 +128,7 @@ alias sozsh="source $HOME/.zshrc"
 # Debian Aliases
 alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias startup="bash $HOME/Scripts/startup.sh"
-alias dockerup="bash $HOME/Scripts/dockerup.sh" 
+alias dockerup="bash $HOME/Scripts/dockerup.sh"
 alias update="sudo apt update && sudo apt upgrade -y"
 
 # To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
