@@ -16,3 +16,7 @@ let mapleader=" "
 nnoremap <leader>v :vnew<CR>
 nnoremap <leader>pf :Ex<CR>
 
+if &diff
+    colorscheme evening
+endif
+
