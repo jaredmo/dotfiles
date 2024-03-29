@@ -101,7 +101,7 @@ alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias hugopost="bash $HOME/Scripts/hugopost.sh"
 alias ncdu="ncdu --color=off"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias update="yay && flatpak update -y && pacdiff -o"
+alias update="yay --devel && flatpak update -y && pacdiff -o"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
