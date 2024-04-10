@@ -6,9 +6,9 @@ opacity = 0.9
 x = 5
 y = 0
 
-[shell]
-program = "/usr/bin/zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
+# [shell]
+# program = "/usr/bin/zsh"
+# args = ["-l", "-c", "tmux attach || tmux"]
 
 [font]
 size = 10.5
