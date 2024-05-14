@@ -120,6 +120,14 @@ alias sozsh="source ~/.zshrc"
 # Mac Aliases
 alias update="brew update && brew upgrade"
 
+# Start ssh-agent
+if [[ ! -f "$SSH_AGENT_PID" ]]; then
+    ssh-agent -t 1h > "$TMPDIR/ssh-agent.env"
+fi
+if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
+    source "$TMPDIR/ssh-agent.env" >/dev/null
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
