@@ -1,13 +1,5 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of $HOME/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
-# Set theme
-source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
-ZSH_THEME="powerlevel10k/powerlevel10k"
+# Enable starship
+eval "$(starship init zsh)"
 
 # Enable AUTO_CD option
 setopt AUTO_CD
@@ -101,7 +93,7 @@ alias sozsh="source $HOME/.zshrc"
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias hugopost="bash $HOME/Scripts/hugopost.sh"
 alias ncdu="ncdu --color=off"
-alias updatemirrors="sudo reflector --verbose --country 'United States' --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 10 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias update="yay --devel && flatpak update -y && pacdiff -o"
 
 # Start ssh-agent
@@ -115,5 +107,3 @@ fi
 # Created by `pipx` on 2023-08-04 12:44:19
 export PATH="$PATH:$HOME/.local/bin"
 
-# To customize prompt, run `p10k configure` or edit $HOME/.p10k.zsh.
-[[ ! -f $HOME/.p10k.zsh ]] || source $HOME/.p10k.zsh

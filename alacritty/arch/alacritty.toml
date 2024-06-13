@@ -1,6 +1,8 @@
 [window]
-startup_mode = "maximized"
+startup_mode = "windowed"
 opacity = 0.9
+dimensions.columns = 150
+dimensions.lines = 40 
 
 [window.padding]
 x = 5
