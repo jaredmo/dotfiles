@@ -92,8 +92,9 @@ alias sozsh="source $HOME/.zshrc"
 # Arch aliases
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias hugopost="bash $HOME/Scripts/hugopost.sh"
+alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
-alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias update="yay --devel && flatpak update -y && pacdiff -o"
 
 # Start ssh-agent
