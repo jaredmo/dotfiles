@@ -99,7 +99,7 @@ fi
 # For a full list of active aliases, run `alias`.
 
 # fzf integration
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source <(fzf --zsh)
 
 # Add $HOME/.local/bin to $PATH
 export PATH="$HOME/.local/bin:$PATH"
