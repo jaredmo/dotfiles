@@ -1,14 +1,8 @@
 local wk = require("which-key")
 
-wk.register({
-	b = {
-		name = "Buffer",
-	},
-	g = {
-		name = "Git",
-		t = "Toggle"
-	},
-	p = {
-		name = "Files",
-	},
-}, { prefix = "<leader>" })
+wk.add({
+	{ "<leader>b",  group = "Buffer" },
+	{ "<leader>g",  group = "Git" },
+	{ "<leader>gt", desc = "Toggle" },
+	{ "<leader>p",  group = "Files" },
+})
