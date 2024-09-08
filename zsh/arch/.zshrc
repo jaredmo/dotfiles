@@ -62,6 +62,16 @@ alias gl="git pull"
 alias glg='git log --stat'
 alias glgp="git log --stat --patch"
 alias glog="git log --oneline --decorate --graph"
+
+# Pretty log messages
+function _git_log_prettily(){
+  if ! [ -z $1 ]; then
+    git log --pretty=$1
+  fi
+}
+compdef _git _git_log_prettily=git-log
+
+alias glp="_git_log_prettily"
 alias gm="git merge"
 alias gp="git push"
 alias gpr="git pull --rebase"
