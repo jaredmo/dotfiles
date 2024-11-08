@@ -105,7 +105,7 @@ alias hugopost="bash $HOME/Scripts/hugopost.sh"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias update="yay --devel && pacdiff -o && flatpak update -y && fwupdmgr refresh --force && fwupdmgr get-updates"
+alias update="yay --devel && pacdiff -o && flatpak update -y && sudo snap refresh && fwupdmgr refresh --force && fwupdmgr get-updates"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
