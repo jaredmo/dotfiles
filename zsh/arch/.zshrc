@@ -29,11 +29,6 @@ fi
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
 
-# pipx completions
-autoload -U bashcompinit
-bashcompinit
-eval "$(register-python-argcomplete pipx)"
-
 # Keybinds
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
@@ -102,6 +97,9 @@ alias sozsh="source $HOME/.zshrc"
 # Arch aliases
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias hugopost="bash $HOME/Scripts/hugopost.sh"
+alias pacman-minimize-manual-ls="comm -23 <(pacman -Qqe | sort) <(pacman -Qqett | sort)"
+alias pacman-orphans-ls="pacman -Qtdq"
+alias pacman-orphans-rm="sudo pacman -Rns $(pacman -Qtdq)"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
@@ -114,12 +112,4 @@ fi
 if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
     source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
 fi
-
-# Enable pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-
-# Enable pipx
-export PATH="$PATH:$HOME/.local/bin"
 
