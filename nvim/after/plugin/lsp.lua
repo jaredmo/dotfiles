@@ -7,13 +7,14 @@ require("mason").setup()
 require("mason-lspconfig").setup {
     ensure_installed = {
         'bashls',
-        'clangd',
+        --'clangd',
         'eslint',
+        'gopls',
         'lua_ls',
         'marksman',
         'pyright',
         --'ruff_lsp',
-        'rust_analyzer',
+        --'rust_analyzer',
         'yamlls',
     } }
 
