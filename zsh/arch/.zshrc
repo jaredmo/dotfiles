@@ -25,6 +25,9 @@ else
   export EDITOR='nvim'
 fi
 
+# Preferred man page viewer
+export MANPAGER='nvim +Man!'
+
 # fzf integration
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
@@ -32,6 +35,11 @@ source /usr/share/fzf/completion.zsh
 # Keybinds
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
+
+# Source /etc/profile for environment variables
+# if [ -f /etc/profile ]; then
+#     source /etc/profile
+# fi
 
 # Aliases
 alias g="git"
@@ -102,8 +110,8 @@ alias pacman-orphans-ls="pacman -Qtdq"
 alias pacman-orphans-rm="sudo pacman -Rns $(pacman -Qtdq)"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
-alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias update="yay --devel && pacdiff -o && flatpak update -y && sudo snap refresh && fwupdmgr refresh --force && fwupdmgr get-updates"
+alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 50 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias update="yay --devel && pacdiff -o && flatpak update -y"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
