@@ -55,4 +55,5 @@ alias gsb="git status -sb"
 alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias :q="exit"
 
