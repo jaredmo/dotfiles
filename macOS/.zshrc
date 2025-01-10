@@ -112,7 +112,8 @@ alias :q="exit"
 alias sozsh="source ~/.zshrc"
 
 # Mac Aliases
-alias update="brew update && brew upgrade"
+alias update="brew update"
+alias upgrade="brew update && brew upgrade"
 
 # Start ssh-agent
 if [[ ! -f "$SSH_AGENT_PID" ]]; then

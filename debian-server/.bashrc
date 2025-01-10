@@ -56,4 +56,6 @@ alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
 alias :q="exit"
+alias update="sudo apt update"
+alias upgrade="sudo apt update && sudo apt upgrade -y"
 
