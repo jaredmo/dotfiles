@@ -27,7 +27,7 @@ require("lazy").setup({
     { 'tpope/vim-sleuth' },
     {
         'ellisonleao/gruvbox.nvim',
-        opts = { transparent_mode = true }
+        opts = { transparent_mode = false }
     },
     { 'ThePrimeagen/harpoon' },
     {
