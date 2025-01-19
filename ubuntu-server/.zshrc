@@ -114,6 +114,8 @@ bindkey '^ ' autosuggest-accept # Ctrl + Space to accept autosuggestion
 # Aliases
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias sudo="sudo " # Enable completions for aliases
+alias sctl="systemctl"
 alias :q="exit"
 alias sozsh="source $HOME/.zshrc"
 

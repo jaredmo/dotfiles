@@ -91,10 +91,12 @@ alias gsb="git status -sb"
 alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias sctl="systemctl"
 alias :q="exit"
 alias sozsh="source $HOME/.zshrc"
 
 # Arch aliases
+alias sudo="sudo " # Enable completions for aliases
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"

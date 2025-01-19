@@ -118,6 +118,8 @@ export PATH=/snap/bin:$PATH # Add snap to PATH
 # Aliases
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias sudo="sudo " # Enable completions for aliases
+alias sctl="systemctl"
 alias :q="exit"
 alias sozsh="source $HOME/.zshrc"
 
