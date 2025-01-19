@@ -36,11 +36,6 @@ source /usr/share/fzf/completion.zsh
 bindkey '^[[1;5C' forward-word
 bindkey '^[[1;5D' backward-word
 
-# Source /etc/profile for environment variables
-# if [ -f /etc/profile ]; then
-#     source /etc/profile
-# fi
-
 # Aliases
 alias g="git"
 alias ga="git add"
@@ -91,12 +86,12 @@ alias gsb="git status -sb"
 alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias sudo="sudo " # Enable completions for aliases
 alias sctl="systemctl"
 alias :q="exit"
 alias sozsh="source $HOME/.zshrc"
 
 # Arch aliases
-alias sudo="sudo " # Enable completions for aliases
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
