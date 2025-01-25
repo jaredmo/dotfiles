@@ -95,6 +95,7 @@ alias sozsh="source $HOME/.zshrc"
 alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
+alias vim="nvim"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 50 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
 alias minimize-manual="comm -23 <(pacman -Qqe | sort) <(pacman -Qqett | sort)"

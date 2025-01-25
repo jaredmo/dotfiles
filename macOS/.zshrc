@@ -114,6 +114,7 @@ alias :q="exit"
 alias sozsh="source ~/.zshrc"
 
 # Mac Aliases
+alias vim="nvim"
 alias update="brew update"
 alias upgrade="brew update && brew upgrade"
 

@@ -121,6 +121,7 @@ alias sozsh="source $HOME/.zshrc"
 
 # Ubuntu Aliases
 alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
+alias vim="nvim"
 alias update="sudo apt update"
 alias upgrade="sudo apt update && sudo apt upgrade -y"
 
