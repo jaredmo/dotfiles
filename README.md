@@ -94,7 +94,7 @@ Personal dotfiles for [stow](https://www.gnu.org/software/stow/).
 
 ## tmux
 
-### Notable Keybinds
+### Keybinds
 `M-[h, j, k, l]` - switch panes  
 `M-[H, J, K, L]` - resize panes  
 `M-[Pageup, Pagedown]` - switch windows  
