@@ -45,8 +45,8 @@ default_border pixel 1
 smart_borders on
 
 # Gaps
-gaps inner 0
-gaps outer 0
+gaps inner 5
+gaps outer 2
 
 ### Output configuration
 
@@ -85,6 +85,10 @@ input "type:touchpad" {
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Suspend & hibernate
+    bindsym $mod+Ctrl+l exec systemctl suspend
+    bindsym $mod+Ctrl+Shift+l exec systemctl hibernate 
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -229,17 +233,7 @@ bindsym $mod+r mode "resize"
 
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position top
-
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while $HOME/.config/sway/status.sh; do sleep 1; done
-
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    swaybar_command waybar
 }
 
 include /etc/sway/config.d/*
