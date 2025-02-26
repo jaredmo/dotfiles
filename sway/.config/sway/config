@@ -13,7 +13,7 @@ set $right l
 set $term alacritty
 
 # Application launcher
-set $menu wmenu-run
+set $menu fuzzel
 
 ### Gruvbox
 set $light #ebdbb2
