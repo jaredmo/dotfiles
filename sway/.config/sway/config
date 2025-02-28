@@ -15,6 +15,9 @@ set $term alacritty
 # Application launcher
 set $menu fuzzel
 
+# File manager
+set $file ranger
+
 ### Gruvbox
 set $light #ebdbb2
 set $dark #3c3836
@@ -81,10 +84,13 @@ input "type:touchpad" {
     bindsym $mod+Return exec $term
 
     # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
     # Start your launcher
     bindsym $mod+d exec $menu
+
+    # Start file manager
+    bindsym $mod+p exec $term --command $file
 
     # Suspend & hibernate
     bindsym $mod+Ctrl+l exec systemctl suspend
