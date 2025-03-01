@@ -54,7 +54,7 @@ gaps outer 2
 ### Output configuration
 
 # Default wallpaper
-output * bg #282828 solid_color
+output * bg ~/.config/sway/wallpaper.jpg fill
 
 ### Idle configuration
 
