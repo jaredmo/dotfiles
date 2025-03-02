@@ -103,6 +103,7 @@ input "type:touchpad" {
     bindsym $mod+p exec $term --command $file
 
     # Suspend & hibernate
+    bindsym $mod+Escape exec swaylock -f -c 000000
     bindsym $mod+Ctrl+l exec systemctl suspend
     bindsym $mod+Ctrl+Shift+l exec systemctl hibernate 
 
