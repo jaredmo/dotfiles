@@ -118,6 +118,7 @@ export PATH=/snap/bin:$PATH # Add snap to PATH
 # Aliases
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias gr!="git reset --hard"
 alias sudo="sudo " # Enable completions for aliases
 alias sctl="systemctl"
 alias :q="exit"
