@@ -44,12 +44,12 @@ title_align center
 titlebar_border_thickness 1
 
 # Borders
-default_border pixel 2
+default_border pixel 3
 smart_borders on
 
 # Gaps
-gaps inner 5
-gaps outer 2
+gaps inner 0
+gaps outer 0
 
 ### Output configuration
 
