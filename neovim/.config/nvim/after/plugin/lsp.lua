@@ -18,18 +18,6 @@ require("mason-lspconfig").setup {
         'yamlls',
     } }
 
--- (Optional) Automatic lsp server setup
--- https://github.com/williamboman/mason-lspconfig.nvim?tab=readme-ov-file#automatic-server-setup-advanced-feature
-require("mason-lspconfig").setup_handlers {
-    function(server_name)
-        require("lspconfig")[server_name].setup {}
-    end,
-    -- (Optional) Configure lua language server for neovim
-    ["lua_ls"] = function()
-        require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
-    end
-}
-
 lsp.on_attach(function(client, bufnr)
     lsp.default_keymaps({ buffer = bufnr })
     lsp.buffer_autoformat() -- Format on save
