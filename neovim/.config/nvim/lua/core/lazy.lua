@@ -71,17 +71,24 @@ require("lazy").setup({
         cmd = 'MasonUpdate'
     },
     { 'williamboman/mason-lspconfig.nvim' },
-    { 'VonHeikemen/lsp-zero.nvim',        branch = 'v3.x' },
-    { 'neovim/nvim-lspconfig' },
     { 'hrsh7th/cmp-nvim-lsp' },
     { 'hrsh7th/nvim-cmp' },
     { 'hrsh7th/cmp-buffer' },
     { 'hrsh7th/cmp-path' },
     {
-        'L3MON4D3/LuaSnip',
+        'neovim/nvim-lspconfig',
         dependencies = {
-            'rafamadriz/friendly-snippets',
-            'saadparwaiz1/cmp_luasnip'
+          {
+            "folke/lazydev.nvim",
+            ft = "lua", -- only load on lua files
+            opts = {
+              library = {
+                -- See the configuration section for more details
+                -- Load luvit types when the `vim.uv` word is found
+                { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+              },
+            },
+          },
         },
     },
 })
