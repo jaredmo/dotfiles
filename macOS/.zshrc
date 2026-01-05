@@ -102,7 +102,7 @@ fi
 source <(fzf --zsh)
 
 # Add $HOME/.local/bin to $PATH
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$(brew --prefix)/bin:$HOME/.local/bin:$PATH"
 
 # Keybinds
 bindkey '^ ' autosuggest-accept # Ctrl + Space to accept autosuggestion
