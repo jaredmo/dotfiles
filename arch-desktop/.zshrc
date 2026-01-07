@@ -93,7 +93,7 @@ alias :q="exit"
 alias sozsh="source $HOME/.zshrc"
 
 # Arch aliases
-alias flactest="find -name '*.flac' -exec flac -wt '{}' \;"
+alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias monero='monero-wallet-cli --wallet-file $HOME/Wallets/monero/mining-wallet --password $(pass show monero-mining-wallet) --log-file $HOME/Wallets/monero/monero-wallet-cli.log'
 alias ncdu="ncdu --color=off"
 alias vim="nvim"

@@ -39,6 +39,7 @@
 
     "clock": {
         "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "timezone": "America/Chicago",
         "tooltip": false
     },
 
