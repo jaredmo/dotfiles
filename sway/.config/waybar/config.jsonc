@@ -18,11 +18,11 @@
 
     "modules-right": [
         "tray",
+        "network",
         "cpu_text",
         "cpu",
         "memory",
         "battery",
-        "network",
         "pulseaudio"
     ],
 
@@ -46,7 +46,6 @@
     "cpu": {
         "format": "cpu {usage}%",
         "interval": 2,
-
         "states": {
             "critical": 90
         }
@@ -55,7 +54,6 @@
     "memory": {
         "format": "mem {percentage}%",
         "interval": 2,
-
         "states": {
             "critical": 80
         }

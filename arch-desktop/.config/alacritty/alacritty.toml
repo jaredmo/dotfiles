@@ -12,7 +12,7 @@ y = 0
 
 [terminal.shell]
 program = "/usr/bin/zsh"
-args = ["-l", "-c", "tmux attach || tmux"]
+# args = ["-l", "-c", "tmux attach || tmux"]
 
 [font]
 size = 10.5
