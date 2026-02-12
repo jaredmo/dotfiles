@@ -18,6 +18,12 @@ set $menu fuzzel
 # File manager
 set $file ranger
 
+# Editor
+set $editor nvim
+
+# Browser
+set $browser firefox
+
 ### Gruvbox
 set $light #ebdbb2
 set $dark #3c3836
@@ -105,6 +111,12 @@ input "type:touchpad" {
 
     # Start file manager
     bindsym $mod+p exec $term --command $file
+
+    # Start editor
+    bindsym $mod+t exec $term --command $editor
+
+    # Start browser
+    bindsym $mod+Ctrl+b exec $browser
 
     # Suspend & hibernate
     bindsym $mod+Escape exec swaylock -f -c 000000
