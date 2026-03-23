@@ -19,6 +19,7 @@
     "modules-right": [
         "tray",
         "network",
+        "custom/nic",
         "cpu_text",
         "cpu",
         "memory",
@@ -74,6 +75,13 @@
         "format-ethernet": "enth {bandwidthDownBits}",
         "format-disconnected" : "no network",
         "interval": 5,
+        "tooltip": false
+    },
+
+    "custom/nic": {
+        "exec": "~/.config/waybar/scripts/get-nic.sh",
+        "interval": 5,
+        "format": "{}",
         "tooltip": false
     },
 
