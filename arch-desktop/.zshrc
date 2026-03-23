@@ -1,6 +1,9 @@
 # Enable starship
 eval "$(starship init zsh)"
 
+# Enable fastfetch
+fastfetch
+
 # Enable AUTO_CD option
 setopt AUTO_CD
 
@@ -97,7 +100,7 @@ alias cmus="systemd-inhibit --what=idle:sleep --why='cmus playing' cmus"
 alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias ncdu="ncdu --color=off"
 alias vim="nvim"
-alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 25 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
+alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
 alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
 alias minimize-manual="comm -23 <(pacman -Qqe | sort) <(pacman -Qqett | sort)"
 alias update="sudo pacman -Sy && pacman -Qu"
