@@ -16,7 +16,7 @@ set $term alacritty
 set $menu fuzzel
 
 # File manager
-set $file ranger
+set $file thunar
 
 # Editor
 set $editor nvim
@@ -112,7 +112,7 @@ input "type:touchpad" {
     bindsym $mod+d exec $menu
 
     # Start file manager
-    bindsym $mod+p exec $term --command $file
+    bindsym $mod+p exec $file
 
     # Start editor
     bindsym $mod+t exec $term --command $editor
