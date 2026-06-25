@@ -104,7 +104,7 @@ alias updatemirrors="sudo reflector --verbose --country 'United States' --latest
 alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
 alias minimize-manual="comm -23 <(pacman -Qqe | sort) <(pacman -Qqett | sort)"
 alias update="sudo pacman -Sy && pacman -Qu"
-alias upgrade="yay --devel && pacdiff -o && flatpak update -y"
+alias upgrade="yay --devel --sudoloop --answerdiff All --removemake && pacdiff -o && flatpak update -y"
 
 # Start ssh-agent
 if ! pgrep -u "$USER" ssh-agent > /dev/null; then
