@@ -56,14 +56,8 @@ alias gsb="git status -sb"
 alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
+alias cat="batcat"
 
-if [ -f /usr/share/bash-completion/completions/systemctl ]; then
-  source /usr/share/bash-completion/completions/systemctl
-  complete -F _systemctl sctl
-  alias sctl="systemctl"
-fi
-
-alias :q="exit"
 alias update="sudo apt update"
 alias upgrade="sudo apt update && sudo apt upgrade -y"
 

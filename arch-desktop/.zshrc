@@ -91,9 +91,7 @@ alias gwch="git whatchanged -p --abbrev-commit --pretty=medium"
 alias l="ls -lah --color"
 alias ll="ls -lh --color"
 alias sudo="sudo " # Enable completions for aliases
-alias sctl="systemctl"
-alias :q="exit"
-alias sozsh="source $HOME/.zshrc"
+alias cat="bat"
 
 # Arch aliases
 alias cmus="systemd-inhibit --what=idle:sleep --why='cmus playing' cmus"
@@ -101,7 +99,6 @@ alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias ncdu="ncdu --color=off"
 alias vim="nvim"
 alias updatemirrors="sudo reflector --verbose --country 'United States' --latest 100 --protocol https --sort rate --save /etc/pacman.d/mirrorlist"
-alias autoremove="sudo pacman -Rns $(pacman -Qtdq)"
 alias minimize-manual="comm -23 <(pacman -Qqe | sort) <(pacman -Qqett | sort)"
 alias update="sudo pacman -Sy && pacman -Qu"
 alias upgrade="sudo pacman -Syu && pacdiff -o && flatpak update -y"

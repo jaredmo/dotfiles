@@ -110,9 +110,7 @@ bindkey '^ ' autosuggest-accept # Ctrl + Space to accept autosuggestion
 # Aliases
 alias gr!="git reset --hard"
 alias sudo="sudo " # Enable completions for aliases
-alias sctl="systemctl"
-alias :q="exit"
-alias sozsh="source ~/.zshrc"
+alias cat="bat"
 
 # Mac Aliases
 alias vim="nvim"

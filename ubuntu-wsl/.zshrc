@@ -120,9 +120,7 @@ alias l="ls -lah --color"
 alias ll="ls -lh --color"
 alias gr!="git reset --hard"
 alias sudo="sudo " # Enable completions for aliases
-alias sctl="systemctl"
-alias :q="exit"
-alias sozsh="source $HOME/.zshrc"
+alias cat="bat"
 
 # Ubuntu Aliases
 alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
