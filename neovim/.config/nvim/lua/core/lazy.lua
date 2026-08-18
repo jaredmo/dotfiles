@@ -52,10 +52,7 @@ require("lazy").setup({
     },
     {
         'numToStr/Comment.nvim',
-        opts = {
-            mappings = { basic = true, extra = false },
-        },
-        lazy = false
+        opts = {},
     },
     {
         'folke/which-key.nvim',
