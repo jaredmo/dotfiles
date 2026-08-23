@@ -11,8 +11,8 @@ x = 5
 y = 0
 
 [terminal.shell]
-program = "/usr/bin/bash"
-# args = ["-l", "-c", "tmux attach || tmux"]
+program = "/usr/bin/zsh"
+args = ["-l", "-c", "tmux attach || tmux"]
 
 [font]
 size = 10.5

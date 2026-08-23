@@ -98,5 +98,5 @@ alias flactest="find -name '*.flac' -exec flac -wst '{}' \;"
 alias ncdu="ncdu --color=off"
 alias vim="nvim"
 alias update="rpm-ostree upgrade --check"
-alias upgrade="flatpak update -y && rpm-ostree upgrade"
+alias upgrade="rpm-ostree upgrade && flatpak update -y" 
 
