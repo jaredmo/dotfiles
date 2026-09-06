@@ -12,7 +12,7 @@ require("mason-lspconfig").setup {
         'pyright',
         --'ruff_lsp',
         --'rust_analyzer',
-        'yamlls',
+        --'yamlls',
     }
 }
 
