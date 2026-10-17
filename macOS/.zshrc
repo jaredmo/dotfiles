@@ -106,6 +106,8 @@ export PATH="$(brew --prefix)/bin:$HOME/.local/bin:$PATH"
 
 # Keybinds
 bindkey '^ ' autosuggest-accept # Ctrl + Space to accept autosuggestion
+bindkey '^[[1;5C' forward-word
+bindkey '^[[1;5D' backward-word
 
 # Aliases
 alias gr!="git reset --hard"
